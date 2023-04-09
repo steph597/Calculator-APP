@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px;
+    font-family:'consolas', sans-serif;
+    background-color: rgb(180, 180, 180);
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 1px black;
+}
+
+.console {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    width: auto;
+    height: 130px;
+    padding: 5px;
+    font-size: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(212, 151, 37);
+    margin-bottom: 20px;
+    box-shadow: inset 0px 0px 3px 1px black;
+}
+
+.previousNumber {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.mathSign {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    font-size: 40px;
+    background-color: rgb(24, 24, 24);
+    border-color: black;
+    background-color: rgb(192, 192, 192);
+    color: black;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    font-family: 'consolas';
+}
+
+.operator,
+.clear,
+.equals {
+    background-color: rgb(70, 70, 70);
+    color: rgb(196, 196, 196);
+}
+
+
+#zero {
+    grid-column: -5/-3;
+}
+
+.equals {
+    grid-row: -1/-3;
+    grid-column: -2;
+}
